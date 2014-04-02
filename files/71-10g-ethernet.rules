@@ -1,0 +1,1 @@
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="ixgbe", KERNEL=="eth*", RUN+="/sbin/ethtool -G %k rx 4096"
